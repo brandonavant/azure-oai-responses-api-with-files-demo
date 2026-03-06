@@ -1,0 +1,45 @@
+Contoso CloudSuite — Product FAQ
+=================================
+
+PRICING AND PLANS
+-----------------
+Basic Plan — $29 per user per month
+  - Up to 5 users, 25 GB storage per user
+  - Email support (48-hour response)
+  - 99.5% uptime SLA, no API access
+
+Pro Plan — $79 per user per month
+  - Unlimited users, 1 TB storage per user
+  - 24/7 phone and email support (4-hour response)
+  - 99.9% uptime SLA, full REST API access
+  - Dedicated account manager
+
+Enterprise Plan — Custom pricing (contact sales)
+  - Everything in Pro, plus on-premises deployment and custom SLA
+
+FEATURES (ALL PLANS)
+--------------------
+  - Real-time document and spreadsheet collaboration
+  - Two-factor authentication, mobile apps, audit logging
+  - SSO via SAML 2.0
+
+INTEGRATIONS
+------------
+Built-in: Slack, Microsoft Teams, Salesforce, GitHub, Jira, Zendesk
+Custom integrations via REST API (Pro and Enterprise only)
+
+SECURITY
+--------
+  - SOC 2 Type II, GDPR, and HIPAA compliant
+  - AES-256 encryption at rest, TLS 1.3 in transit
+  - Data centres: US-East, EU-West, APAC-Southeast
+
+SUPPORT
+-------
+Basic:      Email support@contoso.example.com (48-hour response)
+Pro:        1-800-555-CLOUD or in-app chat (4-hour response, 24/7)
+Enterprise: Dedicated support engineer
+
+CANCELLATION
+------------
+  - Cancel anytime, no fees; data retained 30 days after cancellation

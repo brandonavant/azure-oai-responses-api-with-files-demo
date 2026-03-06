@@ -218,5 +218,5 @@ __marimo__/
 # JetBrains
 .idea
 
-# Generated Sample File
-sample_document.txt
+# Generated sample file (root only — documents/ dir is tracked)
+/sample_document.txt
