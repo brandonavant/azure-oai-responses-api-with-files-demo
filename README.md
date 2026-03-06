@@ -1,6 +1,8 @@
-# Azure OpenAI Responses API — Document Q&A Demo
+# Azure OpenAI Responses API — Vector Store File Search Demo
 
-A Jupyter notebook demonstrating document Q&A using the Azure OpenAI Responses API with GPT-5.2.
+A Jupyter notebook demonstrating document Q&A using the Azure OpenAI Responses API with GPT-5.2 and Vector Store file search.
+
+Documents are uploaded into a **Vector Store** and queried via the `file_search` tool. Both the vector store creation and file uploads are **idempotent** — you can re-run the notebook without creating duplicates.
 
 ## Prerequisites
 
@@ -35,11 +37,20 @@ All settings live in `.env` (never committed — covered by `.gitignore`):
 |---|---|---|
 | `AZURE_OPENAI_ENDPOINT` | Yes | Your Azure OpenAI endpoint URL |
 | `AZURE_OPENAI_API_KEY` | Yes | Your API key |
-| `MODEL_DEPLOYMENT_NAME` | Yes | Your GPT-5.2 deployment name |
+| `MODEL_DEPLOYMENT_NAME` | No | Your GPT-5.2 deployment name (default: `gpt-5.2`) |
 | `REASONING_EFFORT` | No | `low`, `medium`, or `high` (default: `medium`) |
-| `DOCUMENT_PATH` | No | Path to a PDF to query (default: uses built-in sample) |
+| `VECTOR_STORE_NAME` | No | Name for the vector store (default: `demo-vector-store`) |
+| `DOCUMENTS_DIR` | No | Directory containing `.txt` files to upload (default: `documents`) |
 
-A sample document (`sample_document.pdf`) is included to get started immediately.
+A sample document (`documents/sample_document.txt`) is included to get started immediately. Drop additional `.txt` files into the `documents/` directory and re-run the notebook to index them.
+
+## Testing
+
+An end-to-end test script validates idempotent vector store creation, idempotent file upload, and file search queries:
+
+```bash
+python test_vector_store_e2e.py
+```
 
 ## License
 
